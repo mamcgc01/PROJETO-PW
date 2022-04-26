@@ -7,7 +7,12 @@
 }
 
 .navbar {
-  background: #131313;
+  background: linear-gradient(
+    180deg,
+    #a0cdf7 0%,
+    #86b9e9 84.9%,
+    #9ac9f5 99.99%
+  );
   height: 80px;
   display: flex;
   justify-content: center;
@@ -30,64 +35,63 @@
 }
 
 #navbar__logo {
-
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: left;
-    cursor: pointer;
-    text-decoration: none;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: left;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-  
-  .navbar__item {
-    height: 80px;
-  }
-  
-  .navbar__links {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 125px;
-    text-decoration: none;
-    height: 100%;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-  }
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
 
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #2b63bd;
-    background: -webkit-linear-gradient(to right, #45eafc, #267fb2, #1b0676);
-    background: linear-gradient(to right,#45eafc, #267fb2, #1b0676);
-    color: #fff;
-    transition: all 0.3s ease;
-  }
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #2b63bd;
+  background: -webkit-linear-gradient(to right, #45eafc, #267fb2, #1b0676);
+  background: linear-gradient(to right, #45eafc, #267fb2, #1b0676);
+  color: #fff;
+  transition: all 0.3s ease;
+}
 
 .nav__links {
   color: white;
@@ -177,8 +181,14 @@
   }
 }
 
+/* Seccção inicial, primeira pagina do site */
 .initial {
-  background: #fff;
+  background: linear-gradient(
+    180deg,
+    #a0cdf7 0%,
+    #86b9e9 84.9%,
+    #9ac9f5 99.99%
+  );
   padding: 200px 0;
 }
 
@@ -193,8 +203,27 @@
   padding: 30px;
 }
 
-.intial__heading {
-  font-size: 100px;
+.initial__header {
+  font-size: 64px;
   margin-bottom: 24px;
   color: #fff;
 }
+
+.initial__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 77px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 960px) {
+  .initial__container {
+    font-size: 60px;
+  }
+}
+
+/* Seccção sobre nós */
+
+
