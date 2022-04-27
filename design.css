@@ -255,6 +255,10 @@
   text-align: left;
 }
 
+#img1 {
+  width: 80%;
+}
+
 /* Para o Mobile */
 @media screen and (max-width: 1100px) {
   .main__container {
