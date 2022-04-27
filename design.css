@@ -45,7 +45,7 @@
   cursor: pointer;
   text-decoration: none;
 
-  background: linear-gradient(180deg, #128DFF 0%, #00243F 100%);
+  background: linear-gradient(180deg, #128dff 0%, #00243f 100%);
   border-radius: 65px;
 }
 
@@ -224,9 +224,12 @@
 .main__content h1 {
   font-size: 3rem;
   background-color: #9ac9f5;
-  background-image: linear-gradient(to top,#bec9d3 0%,
-  #fefefe 18.9%,
-  #c9d7e4 99.99%);
+  background-image: linear-gradient(
+    to top,
+    #bec9d3 0%,
+    #fefefe 18.9%,
+    #c9d7e4 99.99%
+  );
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -240,7 +243,6 @@
   font-size: 2.5rem;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  
 }
 
 .main__content p {
@@ -327,13 +329,15 @@
   padding: auto;
 }
 
-
-.services__content h1 {
-  font-size: 2rem;
+.services__container h1 {
+  font-size: 3.5rem;
   background-color: #9ac9f5;
-  background-image: linear-gradient(to top,#545d66 0%,
-  #86b9e9 18.9%,
-  #7da3c6 99.99%);
+  background-image: linear-gradient(
+    to top,
+    #bec9d3 0%,
+    #fefefe 18.9%,
+    #c9d7e4 99.99%
+  );
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -344,9 +348,14 @@
 }
 
 .services__content h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
+  color: white;
   -webkit-background-clip: text;
   -moz-background-clip: text;
 }
 
-
+.mybutton {
+  background: #2453ae !important;
+  border-radius: 65px !important;
+  text-align: center !important;
+}
