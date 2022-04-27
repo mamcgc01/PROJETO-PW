@@ -228,7 +228,7 @@
 
 .main {
   background-color: #9ac9f5;
-  padding: auto;
+  padding: 10rem 0;
 }
 
 .main__container {
@@ -241,7 +241,7 @@
   z-index: 1;
   width: 100%;
   max-width: 1280px;
-  padding: auto;
+  padding: 0 50px;
 }
 
 .main__content {
@@ -252,9 +252,9 @@
 .main__content h1 {
   font-size: 2rem;
   background-color: #9ac9f5;
-  background-image: linear-gradient(to top,#545d66 0%,
-  #86b9e9 18.9%,
-  #7da3c6 99.99%);
+  background-image: linear-gradient(to top,#bec9d3 0%,
+  #fefefe 18.9%,
+  #c9d7e4 99.99%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -278,21 +278,114 @@
 }
 
 .main__image__container {
-  text-align: left;
+  text-align: center;
 }
 
 .main__image__card {
   margin: 10px;
-  height: 20px;
-  width: 20px;
+  height: 500px;
+  width: 500px;
   border-radius: 4px;
   display: left;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: left;
   color: #fff;
 }
 
-.services_container{
-  
+/* Para o Mobile */
+@media screen and (max-width: 1100px) {
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+  }
+
+  .main__img--container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__img--card {
+    height: 425px;
+    width: 425px;
+  }
+
+  .main__content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .main__content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .main__content h2 {
+    font-size: 3rem;
+  }
+
+  .main__content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .main__img--card {
+    width: 250px;
+    height: 250px;
+  }
+
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    margin-top: 2rem;
+  }
+}
+
+/* Seccção Serviços */
+
+.services {
+  background: #9ac9f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: auto;
+}
+
+
+.services__content h1 {
+  font-size: 2rem;
+  background-color: #9ac9f5;
+  background-image: linear-gradient(to top,#545d66 0%,
+  #86b9e9 18.9%,
+  #7da3c6 99.99%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.services__content h2 {
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
 
