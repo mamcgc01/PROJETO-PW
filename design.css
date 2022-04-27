@@ -265,12 +265,12 @@
     height: 90%;
   }
 
-  .main__img--container {
+  .main__img__container {
     display: flex;
     justify-content: center;
   }
 
-  .main__img--card {
+  .main__img__card {
     height: 125px;
     width: 125px;
   }
@@ -296,7 +296,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .main__img--card {
+  .main__img__card {
     width: 250px;
     height: 250px;
   }
