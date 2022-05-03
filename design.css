@@ -363,3 +363,160 @@
   border-radius: 65px !important;
   text-align: center !important;
 }
+
+span.newsonmove1 {
+  color:white;
+  box-sizing: border-box;
+  font-size: 36px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 61.2px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-align: right;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: auto;
+}
+
+.final_menu_esquerdo {
+  color: white;
+  text-align: left;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex end;
+  justify-content: flex-end;
+}
+
+.final_menu_meio {
+  color: white;
+  text-align: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex end;
+  justify-content: flex-end;
+}
+
+.final_menu_direita {
+  color: white;
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex end;
+  justify-content: flex-end;
+}
+
+.final_menu_esquerda {
+  -webkit-box-flex: 1;
+  flex:1;
+}
+
+.final_menu_meio {
+  -webkit-box-flex: 1;
+  flex:1;
+}
+
+.final_menu_direita {
+  -webkit-box-flex: 1;
+  flex:1;
+}
+
+.final{
+  display: flex;
+  margin-bottom: 0;
+}
+
+#linha{
+  color: white;
+    margin: 0;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#linha1{
+  color: white;
+    margin: 0;
+    background: white;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.pic{
+
+  position: relative;
+  height: 25rem;
+  border-radius: 10px;
+  box-shadow: 2px 6px 10px;
+  width: 90%;
+}
+.pic img{
+  max-width: 100%;
+  height: 100%;
+
+}
+.pic::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .2s;
+  z-index: 1;
+  letter-spacing: 0.2rem;
+}
+.pic::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  height: 0;
+  background-color: rgba(15, 15, 15, 0.904);
+  transition: 0.3s;
+}
+.pic:hover::after{
+  height: 100%;
+}
+.pic:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+
+/*
+.pic img1{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+*/
+
+#img1{
+  width: 100%;
+}
+
+#img1::before{
+  content: "Através";
+  white-space: pre;
+}
+
+.navbar__container{
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: 350;
+}
