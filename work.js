@@ -1,17 +1,18 @@
+
 // form.js
-const formId = "save-form"; // ID of the form
+const formId = "formHire"; // ID of the form
+const formIdIntern = "formIntern";
 
 const url = location.href; //  href for the page
 //const formIdentifier = `${url} ${formId}`; // Identifier used to identify the form
 const formIdentifier = `${formId}`; // Identifier used to identify the form
-const saveButton = document.querySelector("#save"); // select save button
-const loadButton = document.querySelector("#load"); // select load button
-const showButton = document.querySelector("#show"); // select show button
+const formIdentifierIntern = `${formIdIntern}`; // Identifier used to identify the form
 const submitButton = document.querySelector("#submit"); // select submit button
 const alertBox = document.querySelector(".alert"); // select alert display div
 let form = document.querySelector(`#${formId}`); // select form
-console.log(form);
+let formIntern = document.querySelector(`#${formIdIntern}`); // select form
 let formElements = form.elements; // get the elements in the form
+let formElementsIntern = formIntern.elements; // get the elements in the form
 
 /**
  * This function gets the values in the form
@@ -39,28 +40,10 @@ const getFormData2 = () => {
     return data;
 };
 
-saveButton.onclick = event => {
-    event.preventDefault();
-    data = getFormData();
-    localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
-    const message = "Form draft has been saved!";
-    displayAlert(message);
-};
-
-loadButton.onclick = event => {
-    event.preventDefault();
-    populateForm();
-}
-
-showButton.onclick = event => {
-    event.preventDefault();
-    loadData();
-
-}
 
 submitButton.onclick = event => {
     event.preventDefault();
-    data = getFormData2();
+    data = getFormData();
     console.log(data);
     SaveDataToLocalStorage(data);
 }
@@ -86,9 +69,9 @@ const loadData = () => {
     let tableData = data.map(user => (
         `
       <tr>
-        <td>${user.fullname}</td>
-        <td>${user.email}</td>
-        <td>${user.phone}</td>
+        <td>${user.nome}</td>
+        <td>${user.dataIn}</td>
+        <td>${user.dataFin}</td>
         <td>${user.dob}</td>
       </tr>
     `
@@ -111,6 +94,18 @@ function SaveDataToLocalStorage(data) {
     localStorage.setItem("form", JSON.stringify(a));
 }
 
+function SaveDataToLocalStorageIntern(data) {
+    let a = [];
+    // Parse the serialized data back into an aray of objects
+    a = JSON.parse(localStorage.getItem("formIntern")) || [];
+    console.log(a)
+    // Push the new data (whether it be an object or anything else) onto the array
+    a.push(data);
+    // Alert the array value
+    // Re-serialize the array back into a string and store it in localStorage
+    localStorage.setItem("formIntern", JSON.stringify(a));
+}
+
 /**
  * This function populates the form
  * with data from localStorage
@@ -126,5 +121,18 @@ const populateForm = () => {
         }
         const message = "Form has been refilled with saved data!";
         displayAlert(message);
+    }
+
+const populateFormIntern = () => {
+        if (localStorage.key(formIdentifierIntern)) {
+            const savedData = JSON.parse(localStorage.getItem(formIdentifierIntern)); // get and parse the saved data from localStorage
+            for (const element of formElementsIntern) {
+                if (element.name in savedData) {
+                    element.value = savedData[element.name];
+                }
+            }
+            const message = "Form has been refilled with saved data!";
+            displayAlert(message);
+        }
     }
 };

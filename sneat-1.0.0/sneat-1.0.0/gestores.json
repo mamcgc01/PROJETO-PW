@@ -1,0 +1,16 @@
+{"gestores" : [
+    {
+    "nome": "Rita Ferro",
+    "password": "1234",
+    "genero": "feminino",
+    "idade": 35
+    },
+    {
+    "nome": "Mário Pereira",
+    "password": "1234",
+    "genero": "masculino",
+    "idade": 38
+    }
+    ]   
+}
+
