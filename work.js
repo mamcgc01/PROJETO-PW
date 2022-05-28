@@ -68,12 +68,14 @@ const loadData = () => {
     console.log(data)
     let tableData = data.map(user => (
         `
-      <tr>
-        <td>${user.nome}</td>
-        <td>${user.dataIn}</td>
-        <td>${user.dataFin}</td>
-        <td>${user.dob}</td>
-      </tr>
+        <tr>
+        <td>${user[i].nome}</td>
+        <td>${user[i].dataIn}</td>
+        <td>${user[i].dataFin}</td>
+        <td>${user[i].numJornalistas}</td>
+        <td>${user[i].riskLevel}</td>
+        <td>${user[i].complexityLevel}</td>
+        </tr>
     `
     )).join('');
 
