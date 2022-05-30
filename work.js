@@ -70,6 +70,7 @@ const loadData = () => {
         `
         <tr>
         <td>${user[i].nome}</td>
+        <td>${user[i].orcamento}</td>
         <td>${user[i].dataIn}</td>
         <td>${user[i].dataFin}</td>
         <td>${user[i].numJornalistas}</td>
