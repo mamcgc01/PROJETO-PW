@@ -44,7 +44,7 @@
                 </div>
                 <ul class="navbar__menu">
                     <li class="navbar__item">
-                        <a href="#home" class="navbar__links" id="home-page"><strong>Home</strong></a>
+                        <a href="#home" class="navbar__links" id="home-page"><strong>Página Inicial</strong></a>
                     </li>
                     <li class="navbar__item">
                         <a href="#about" class="navbar__links" id="about-page"><strong>Sobre
@@ -89,48 +89,45 @@
         <!-- Secção Serviços, onde iniciamos as classes desta-->
         <div class="services" id="services">
             <div class="services__container">
-                <h1> Services </h1>
+                <h1> Serviços </h1>
                 <div class="services__content">
                     <h2>
-                        The company's journalism teams will be responsible for
-                        answering requests related to sports
-                        journalism,
-                        from national and international sporting events, games,
-                        classifications, reports to personalities in
-                        the
-                        medium (players, coaches, referees...), among other
-                        activities. Interested journalists will also be
-                        able
-                        to do internships at events that are taking place.
+                        As equipas de jornalismo da empresa serão responsáveis por
+                        responder a pedidos relacionados com o jornalismo,
+                        de eventos desportivos nacionais e internacionais, jogos, 
+                        classificações e relatórios (jogadores, treinadores, árbitros...),
+                        entre outras actividades. Os jornalistas interessados poderão também
+                        realizar estágios em eventos que estão a decorrer.
+
                     </h2>
                 </div>
                 <center>
                     <button type="button" class="btn btn-primary mybutton"
                         data-bs-toggle="modal" data-bs-target="#myModal">
-                        Hire
-                        Team</button>
+                        Contratar Equipa
+                    </button>
                     <button type="button" class="btn btn-primary mybutton"
                         data-bs-toggle="modal" data-bs-target="#myModal">
-                        Internship
+                        Estágios
                     </button>
                 </center>
                 <div class="modal" id="myModal">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Hire your dream team
-                                    here!</h4>
+                                <h4 class="modal-title">Contrate aqui a sua equipa!
+                                    </h4>
                             </div> <!-- Modal body -->
                             <div class="modal-body">
 
                                 <form id="formHire">
                                     <div class="mb-3 mt-3">
-                                        <label for="nome" class="form-label">Name
-                                            of the Event:</label>
+                                        <label for="nome" class="form-label"> 
+                                            Nome do Evento:
+                                        </label>
                                         <input type="nome" class="form-control"
                                             id="nameform"
-                                            placeholder="Enter Name of the
-                                            Event" name="nome">
+                                            placeholder=" Nome do Evento" name="nome">
                                     </div>
                                     <div class ="calendar">
                                         <label for="dataIn">Data de Início:<br></label>
@@ -139,7 +136,7 @@
                                             Data de fim:</label>
                                         <input type="date" name="dataFin" id="dob2" />
                                     </div>
-                                    <p>How many team members do you need?</p>
+                                    <p>Quantos elementos são necessários?</p>
                                     <div class="form-check">
                                         <input type="radio"
                                             class="form-check-input" id="radio1"
@@ -191,8 +188,8 @@
                                     </div>
                                         <div>
                                             <label for="complexityLevel"
-                                                class="form-label">Complexity
-                                                Level</label>
+                                                class="form-label">Nível de Complexidade
+                                            </label>
                                             <input type="range"
                                                 class="form-range"
                                                 id="complexityLevel" name ="complexityLevel" min="0"
@@ -200,21 +197,20 @@
                                         </div>
                                         <div>
                                             <label for="riskLevel"
-                                                class="form-label">Risk Level</label>
+                                                class="form-label">Nível de Risco</label>
                                             <input type="range"
                                                 class="form-range"
                                                 id="riskLevel" min="0" name ="riskLevel" max="10">
                                         </div>
                                         <div>
-                                            <label for="addictional_text">Additional
-                                                information about the job:</label>
+                                            <label for="addictional_text">Informação adicional sobre o trabalho:</label>
                                             <textarea class="form-control"
                                                 rows="10" id="addictional_text"
                                                 name="addictional_text"></textarea>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="submit" id="submit" value="formHire" name="saves" class="btn
-                                            btn-primary">Submit</button>
+                                            btn-primary">Submeter</button>
                                         </div>
 
                                     </div>
@@ -231,76 +227,68 @@
             <div class="main" id="internship">
                 <div class="internship_container">
                     <div class="internship_content">
-                        <h1> Internships </h1>
+                        <h1> Estágios </h1>
                         <h2>
-                            Do your internship here!</h2>
+                            Faça aqui o seu estágio!</h2>
                     </div>
                     <!-- Tabela com informações de estágios disponíveis-->
                     <div class="tabela" id="tabela">
                         <table class="table table-striped" id="eventTable">
                             <thead>
-                                Consult the list of events that you can apply
-                                for!
+                                Consulte aqui a lista de eventos!
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td> <input type="radio"
-                                        class="form-check-input"
-                                        id="radio8" name="aceitarEstagio1"
-                                        value="8">
-                                    </td>
+                                    <td> </td>
+                                    <th>Eventos</th>
+                                    <th>País</th>
+                                    <th>Número de vagas </th>
+                                    
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
                                     <td> <input type="radio"
                                         class="form-check-input"
                                         id="radio9" name="aceitarEstagio2"
                                         value="9">
                                     </td>
+                                    <td>Benfica X Porto </td>
+                                    <td>Portugal</td>
+                                    <td>3</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
                                     <td> <input type="radio"
                                         class="form-check-input"
                                         id="radio10" name="aceitarEstagio10"
                                         value="10">
                                     </td>
+                                    <td>Roland-Garros, RND1</td>
+                                    <td>França</td>
+                                    <td>1</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <form id="formIntern">
                         <div class="mb-3 mt-3">
-                            <label for="name" class="form-label">Your Name:</label>
+                            <label for="name" class="form-label">Nome:</label>
                             <input type="name" class="form-control" id="name"
-                                placeholder="Enter your name" name="name">
+                                placeholder="nome" name="name">
                         </div>
                         <div class="mb-3 mt-3">
-                            <label for="email" class="form-label">Your E-mail:</label>
+                            <label for="email" class="form-label">E-mail:</label>
                             <input type="email" class="form-control" id="email"
-                                placeholder="Enter your e-mail"
+                                placeholder="e-mail"
                                 name="email">
                         </div>
                         <!-- data e carregar curriculo-->
                         <div>
-                            <label for="addictional_text">Additional information
-                                about you:</label>
+                            <label for="addictional_text">Informação adicional:</label>
                             <textarea class="form-control" rows="10"
                                 id="addictional_info"
                                 name="addictional_info"></textarea>
                         </div>
                         <button type="submit" id="submit" value="formIntern" name="saves" class="btn
-                            btn-primary">Submit</button>
+                            btn-primary">Submeter</button>
                     </form>
                 </div>
             </div>
@@ -316,13 +304,13 @@
                 <div class="row">
                     <!--Grid column-->
                     <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
-                        <h5 class="text-white"><strong>About us</strong></h5>
+                        <h5 class="text-white"><strong>Sobre nós</strong></h5>
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">How we work</a>
+                                <a href="#!" class="text-white">Como trabalhamos</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Terms of Service</a>
+                                <a href="#!" class="text-white">Termos de Serviço</a>
                             </li>
                         </ul>
                     </div>
@@ -330,13 +318,13 @@
 
                     <!--Grid column-->
                     <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
-                        <h5 class="text-white"><strong>Contact us</strong></h5>
+                        <h5 class="text-white"><strong>Contacte-nos</strong></h5>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="#!" class="text-white">Contact</a>
+                                <a href="#!" class="text-white">Contactos</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Support</a>
+                                <a href="#!" class="text-white">Suporte</a>
                             </ul>
                         </div>
                         <!--Grid column-->
