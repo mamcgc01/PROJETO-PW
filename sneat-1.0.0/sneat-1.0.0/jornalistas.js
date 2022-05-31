@@ -26,7 +26,7 @@ var jornalistas = [
         "genero": "feminino",
         "idade": 21,
         "disponibilidade": true
-    },    
+    },
     {
         "nome": "José Pereira",
         "password": "1234",
@@ -49,45 +49,59 @@ var jornalistas = [
         "disponibilidade": true
     }
 
-    ]   
+]
 
 
 buildTable(jornalistas);
 
 
 
-	 function buildTable(data){
-		var table = document.getElementById('myTable')
+function buildTable(data) {
+    var table = document.getElementById('myTable')
 
-		for (var i = 0; i < data.length; i++){
-            if (data[i].disponibilidade === true) {
-			var row = `<tr>
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].disponibilidade === true) {
+            var row = `<tr>
 							<td>${data[i].nome}</td>
 							<td>${data[i].genero}</td>
 							<td>${data[i].idade}</td>
 					  </tr>`
-			table.innerHTML += row
-            }
+            table.innerHTML += row
+        }
 
-		}
-	}
-    loadListJorn(jornalistas);
-
-    function loadListJorn  (data) {
-        let dropdown = document.getElementById('listJornalistas');
-        let option;
-        for (var i = 0; i < data.length; i++){
-            option = document.createElement('option');
-            console.log(data[i.nome]);
-            option.text = data[i].nome;
-            option.value = data[i].nome;
-            dropdown.append(option);
-        };
-    
     }
+}
+loadListJorn(jornalistas);
 
-    function addDays(date, days) {
-        var result = new Date(date);
-        result.setDate(result.getDate() + days);
-        return result;
-      }
+function loadListJorn(data) {
+    let chooseJorn = document.getElementById('chooseJorn');
+    let input;
+    let label;
+    for (var i = 0; i < data.length; i++)
+        if (data[i].disponibilidade === true) {
+            input = document.createElement('input');
+            console.log(data[i].nome);
+            input.class = 'form-check-input';
+            input.type = 'checkbox';
+            input.name = 'jornalistas';
+            input.value = data[i].nome;
+            input.id = 'data[i].nome;'
+            chooseJorn.append(input);
+            label = document.createElement('label');
+            label.class = 'form-check-label';
+            label.for = data[i].nome;
+            label.textContent = data[i].nome;
+            chooseJorn.append(label);
+        };
+
+}
+
+function addDays(date, days) {
+    var result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+}
+
+function alterarDisponibilidade(){
+    
+}
