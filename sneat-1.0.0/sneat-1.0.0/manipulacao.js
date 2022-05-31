@@ -21,7 +21,14 @@ function toRad(Value)
 }
 
 
-function CalcularLucros {
-    var custos;
-    var 
+function CalcularDespesa(data) {
+
+
+  let jornalistas =  (formData.get('numJornalista'));
+  let distancia = 0.5 * (formData.get('complexityLevel'));
+  let risco = 100 * (formData.get('riskLevel'));
+
+  let total = jornalistas * risco + distancia;
+
+  return total;
 }
