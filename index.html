@@ -48,9 +48,46 @@
                     <a href="#internship" class="navbar__links" id="internship-page"><strong>Internship</strong></a>
                 </li>
 
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarRightAlignExample"
+        aria-controls="navbarRightAlignExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Toggle button -->
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Left links -->
+        <ul id="navtext" class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Página inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#services">Serviços</a>
+          </li>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu end-0">
+              <li><a class="dropdown-item" href="#home">Página inicial</a></li>
+              <li><a class="dropdown-item" href="#about">Sobre nós</a></li>
+              <li><a class="dropdown-item" href="#services">Serviços</a></li>
             </ul>
-        </div>
-    </nav>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
 
     <!--  Secção Inicial ---->
     <div class="initial" id="initial">
@@ -58,6 +95,7 @@
             <h1 class="initial__header">Bem-vindo à</h1> <!-- vue chavetas-->
             <p class="initial__title">NewsOnMove</p> <!-- vue chavetas onde temos texto-->
         </div>
+        <hr id="linha" size="10" width="65%">
     </div>
 
     <!-- Secção Sobre Nós, onde iniciamos as classes desta-->
@@ -68,12 +106,9 @@
             </div>
             <div class="main__content">
                 <h1>O que é a NewsOnMove?</h1>
-                <h2>Complementamos as suas necessidades com as melhores
-                    equipas!</h2>
-                <p>Através da NewsOnMove contrate equipas jornalisticas de
-                    alta qualidade para os eventos que prentede
-                    cobrir, desde os eventos desportivos nacionais, aos
-                    internacionais.</p>
+                <h2>Complementamos as suas necessidades com as melhores equipas!</h2>
+                <p>Através da NewsOnMove contrate equipas jornalisticas de alta qualidade para os eventos que prentede
+                    cobrir, desde os eventos desportivos nacionais, aos internacionais.</p>
             </div>
         </div>
     </div>
@@ -81,19 +116,13 @@
     <!-- Secção Serviços, onde iniciamos as classes desta-->
     <div class="services" id="services">
         <div class="services__container">
-            <h1> Services </h1>
+            <h1> Serviços </h1>
             <div class="services__content">
                 <h2>
-                    The company's journalism teams will be responsible for
-                    answering requests related to sports
-                    journalism,
-                    from national and international sporting events, games,
-                    classifications, reports to personalities in
-                    the
-                    medium (players, coaches, referees...), among other
-                    activities. Interested journalists will also be
-                    able
-                    to do internships at events that are taking place.
+                  As equipas de jornalismo da empresa serão responsáveis por responder a pedidos relacionados com o jornalismo
+                  de eventos desportivos nacionais e internacionais, jogos, classificações e relatórios (jogadores, treinadores, árbitros...),
+                  entre outras actividades. 
+                  Os jornalistas interessados poderão também realizar estágios em eventos que estão a decorrer.
                 </h2>
             </div>
             <div class="buttons1">
@@ -177,37 +206,150 @@
                                             name="complexityLevel" min="0" max="5">
                                     </div>
                                     <div>
-                                        <label for="riskLevel" class="form-label">Risk Level</label>
-                                        <input type="range" class="form-range" id="riskLevel" min="0" name="riskLevel"
-                                            max="10">
+                                      <label for="orcamento">Orçamento:</label>
+                                      <textarea class="form-control" rows="1" id="orcamento"
+                                          name="orcamento"></textarea>
                                     </div>
                                     <div>
-                                        <label for="addictional_text">Informação
-                                            adicional sobre a operação:</label>
+                                      <label for="localizacao">Localização:</label>
+                                      <textarea class="form-control" rows="1" id="localizacao"
+                                          name="localizacao"></textarea>
+                                    </div>
+                                    <div class ="calendar">
+                                        <label for="dataIn">Data de Início:</label>
+                                        <input type="date" name="dataIn" id="dob" /><br>
+                                        <label for="dataFin">
+                                           Data de fim:<br></label>
+                                        <input type="date" name="dataFin" id="dob2" />
+                                    </div>
+                                    <p>Quantos elementos são necessários?</p>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio1" name="numJornalistas"
+                                           value="1">1
+                                        <label class="form-check-label" for="radio1"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio2" name="numJornalistas"
+                                            value="2">2
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio3" name="numJornalistas"
+                                            value="3">3
+                                        <label class="form-check-label" for="radio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio4" name="numJornalistas"
+                                            value="4">4
+                                        <label class="form-check-label" for="radio4"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio5" name="numJornalistas"
+                                            value="5">5
+                                        <label class="form-check-label" for="radio5"></label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input type="radio" class="form-check-input" id="radio6" name="numJornalistas"
+                                          value="6">6
+                                      <label class="form-check-label" for="radio6"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="radio7" name="numJornalistas"
+                                          value="7">7
+                                        <label class="form-check-label" for="radio7"></label>
+                                    </div>
+                                    <div>
+                                        <label for="complexityLevel" class="form-label">Nível de Complexidade</label>
+                                        <input type="range" class="form-range" id="complexityLevel" name="complexityLevel" min="0" max="5">
+                                    </div>
+                                    <div>
+                                        <label for="riskLevel" class="form-label">Nível de Risco</label>
+                                        <input type="range" class="form-range" id="riskLevel" name="riskLevel" min="0" max="10">
+                                    </div>
+                                      <div>
+                                        <label for="addictional_text">Informação adicional sobre o trabalho:</label>
                                         <textarea class="form-control" rows="10" id="addictional_text"
                                             name="addictional_text"></textarea>
-                                    </div>
+                                      </div>
                                     <div class="modal-footer">
-                                        <button type="submit" id="submit10" value="formHire" class="btn" name="saves">Submeter</button>
+                                        <button type="submit" id="submit" value="formHire" name="saves" class="btn btn-primary">Submeter</button>
                                     </div>
-
-                                </div>
-
-                            </form>
+                                  </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+      </div>
 
         <!-- Secção Estágios, onde iniciamos as classes desta-->
-        <div class="main" id="internship">
-            <div class="internship_container">
-                <div class="internship_content">
-                    <h1> Internships </h1>
-                    <h2>
-                        Do your internship here!</h2>
+            <div class="main" id="internship">
+                <div class="internship_container">
+                    <div class="internship_content">
+                        <h1> Estágios </h1>
+                        <h2>
+                            Faça aqui o seu estágio!</h2>
+                    </div>
+                    <!-- Tabela com informações de estágios disponíveis-->
+                    <div class="tabela" id="tabela">
+                        <table class="table table-striped" id="eventTable">
+                            <thead>
+                                Consulte aqui a lista de eventos!
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> </td>
+                                    <th>Eventos</th>
+                                    <th>País</th>
+                                    <th>Número de vagas </th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td> <input type="radio"
+                                        class="form-check-input"
+                                        id="radio9" name="aceitarEstagio2"
+                                        value="9">
+                                    </td>
+                                    <td>Benfica X Porto </td>
+                                    <td>Portugal</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td> <input type="radio"
+                                        class="form-check-input"
+                                        id="radio10" name="aceitarEstagio10"
+                                        value="10">
+                                    </td>
+                                    <td>Roland-Garros, RND1</td>
+                                    <td>França</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <form id="formIntern">
+                        <div class="mb-3 mt-3">
+                            <label for="name" class="form-label">Nome:</label>
+                            <input type="name" class="form-control" id="name"
+                                placeholder="nome" name="name">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="e-mail"
+                                name="email">
+                        </div>
+                        <!-- data e carregar curriculo-->
+                        <div>
+                            <label for="addictional_text">Informação adicional:</label>
+                            <textarea class="form-control" rows="10"
+                                id="addictional_info"
+                                name="addictional_info"></textarea>
+                        </div>
+                        <button type="submit" id="submit" value="formIntern" name="saves" class="btn
+                            btn-primary">Submeter</button>
+                    </div>
+                    </form>
                 </div>
                 <div class="row">
                 <!-- Tabela com informações de estágios disponíveis-->
@@ -270,36 +412,87 @@
     
 
         <hr id="linha1" size="6" width="70%">
+    
 
-
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#internship">Internships</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
-                    </ul>
-                </div>
+    <footer id="corfooter" class="text-center text-white">
+        <!-- Grid container -->
+        <div id="corfooter1" class="container p-3">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-white"><strong>Sobre nós</strong></h5>
+      
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Como trabalhamos</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Termos de Serviço</a>
+                </li>
+              </ul>
             </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2022 by NewsOnMove. All rights reserved.
-                </p>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-white"><strong>Contactos</strong></h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!" class="text-white">Contactos</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Suporte</a>
+              </ul>
             </div>
-        </footer>
+            <!--Grid column-->
 
-        <script src="work.js"></script>
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Grid container -->
+        <div id="corfooter2" class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+
+      <script src="work.js"></script>
 </body>
 
 </html>
