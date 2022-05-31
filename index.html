@@ -108,8 +108,10 @@
             <div class="main__content">
                 <h1>O que é a NewsOnMove?</h1>
                 <h2>Complementamos as suas necessidades com as melhores equipas!</h2>
-                <p>Através da NewsOnMove contrate equipas jornalisticas de alta qualidade para os eventos que prentede
-                    cobrir, desde os eventos desportivos nacionais, aos internacionais.</p>
+                <ul>
+                  <li>Através da NewsOnMove contrate equipas jornalisticas de alta qualidade para os eventos que prentede
+                    cobrir, desde os eventos desportivos nacionais, aos internacionais.</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -126,11 +128,11 @@
                   Os jornalistas interessados poderão também realizar estágios em eventos que estão a decorrer.
                 </h2>
                 <center>
-                  <button type="button" class="btn btn-primary mybutton"
+                  <button type="button" id="btnequipa" class="btn btn-primary mybutton btn-lg me-md-4"
                     data-bs-toggle="modal" data-bs-target="#myModal">
                     Contratar Equipa
                   </button>
-                  <button type="button" class="btn btn-primary mybutton"
+                  <button type="button" id="btnestagios" class="btn btn-primary mybutton btn-lg me-md-4"
                     data-bs-toggle="modal" data-bs-target="#myModal">
                     Estágios
                   </button>
@@ -260,29 +262,31 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <!--tabela fecha aqui-->
                     <form id="formIntern">
                         <div class="mb-3 mt-3">
-                            <label for="name" class="form-label">Nome:</label>
+                            <label id="lblnome" for="name">Nome:</label>
                             <input type="name" class="form-control" id="name"
-                                placeholder="nome" name="name">
+                                placeholder="ex: João Alberto Carlos" name="name">
                         </div>
                         <div class="mb-3 mt-3">
-                            <label for="email" class="form-label">E-mail:</label>
+                            <label id="lblemail" for="email">E-mail:</label>
                             <input type="email" class="form-control" id="email"
-                                placeholder="e-mail"
+                                placeholder="ex: joaocarlos@gmail.com"
                                 name="email">
                         </div>
                         <!-- data e carregar curriculo-->
                         <div>
-                            <label for="addictional_text">Informação adicional:</label>
+                            <label id="lblinfo" for="addictional_text">Informação adicional:</label>
                             <textarea class="form-control" rows="10"
                                 id="addictional_info"
                                 name="addictional_info"></textarea>
+                         </div>
+                       </div>
+                        </form>
+                        <div id="btnsubmeter" class="d-grid mx-auto col-6 gap-2">
+                          <button type="submit" id="submit" value="formIntern" name="saves" class="btn btn-primary mybutton btn-lg">Submeter</button>
                         </div>
-                        <button type="submit" id="submit" value="formIntern" name="saves" class="btn
-                            btn-primary">Submeter</button>
-                    </div>
-                    </form>
                 </div>
             </div> 
 
