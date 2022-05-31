@@ -602,6 +602,20 @@ span.newsonmove1 {
   color:#D5F2FE;
 }
 
+#tabelaestagios{
+  color:white
+}
+
+#tblcolunas{
+  font-size: 1.3rem;
+  font-weight: 550;
+}
+
+.table{
+  text-align: center;
+  margin-top: 25px;
+}
+
 
 
 

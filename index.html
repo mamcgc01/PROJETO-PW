@@ -227,41 +227,60 @@
                             Faça aqui o seu estágio!</h2>
                     </div>
                     <!-- Tabela com informações de estágios disponíveis-->
-                    <div class="tabela" id="tabela">
-                        <table class="table table-striped" id="eventTable">
-                            <thead>
-                                Consulte aqui a lista de eventos!
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td> </td>
-                                    <th>Eventos</th>
-                                    <th>País</th>
-                                    <th>Número de vagas </th>
-                                    
-                                </tr>
-                                <tr>
-                                    <td> <input type="radio"
-                                        class="form-check-input"
-                                        id="radio9" name="aceitarEstagio2"
-                                        value="9">
-                                    </td>
-                                    <td>Benfica X Porto </td>
-                                    <td>Portugal</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td> <input type="radio"
-                                        class="form-check-input"
-                                        id="radio10" name="aceitarEstagio10"
-                                        value="10">
-                                    </td>
-                                    <td>Roland-Garros, RND1</td>
-                                    <td>França</td>
-                                    <td>1</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <table id="tabelaestagios" class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </div>
+                          </th>
+                          
+                          <th id="tblcolunas" scope="col">Eventos</th>
+                          <th id="tblcolunas"scope="col">País</th>
+                          <th id="tblcolunas"scope="col">Número</th>
+                          <th id="tblcolunas" scope="col">Imagens</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="aceitarEstagio2" value="9" id="radio9" />
+                            </div>
+                          </th>
+                          <td>Benfica x Porto</td>
+                          <td>Portugal</td>
+                          <td>3</td>
+                          <td>
+                              <img
+                                  src="/images/icon_portobenfica.png"
+                                  alt="Benfica x Porto"
+                                  style="width: 55px; height: 55px"
+                                  class="rounded-circle"
+                                  />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="aceitarEstagio10" value="10" id="radio19" />
+                            </div>
+                          </th>
+                          <td>Roland-Garros, RND1</td>
+                          <td>França</td>
+                          <td>1</td>
+                          <td>
+                              <img
+                                  src="/images/icon_roland.png"
+                                  alt="Roland-Garros, RND1"
+                                  style="width: 55px; height: 55px"
+                                  class="rounded-circle"
+                                  />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                         <!--tabela fecha aqui-->
                     <form id="formIntern">
                         <div class="mb-3 mt-3">
