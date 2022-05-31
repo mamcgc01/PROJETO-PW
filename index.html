@@ -101,17 +101,26 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h4 class="modal-title">Hire your dream team
-                                here!</h4>
+                            <h4 class="modal-title">Contrate aqui a sua equipa de sonho!
+                            </h4>
                         </div> <!-- Modal body -->
                         <div class="modal-body">
 
                             <form id="formHire">
                                 <div class="mb-3 mt-3">
-                                    <label for="nome" class="form-label">Name
-                                        of the Event:</label>
-                                    <input type="nome" class="form-control" id="nameform" placeholder="Enter Name of the
-                                            Event" name="nome">
+                                    <label for="nome" class="form-label">Nome
+                                        do Evento:</label>
+                                    <input type="nome" class="form-control" id="nameform" placeholder="Insira o Nome do Evento" name="nome">
+                                </div>
+                                <div>
+                                    <label for="orcamento">Orçamento</label>
+                                    <textarea class="form-control" rows="1" id="orcamento"
+                                        name="orcamento"></textarea>
+                                </div>
+                                <div>
+                                    <label for="localizacao">Localização</label>
+                                    <textarea class="form-control" rows="1" id="localizacao"
+                                        name="localizacao"></textarea>
                                 </div>
                                 <div class="calendar">
                                     <label for="dataIn">Data de Início:<br></label>
@@ -120,7 +129,7 @@
                                         Data de fim:</label>
                                     <input type="date" name="dataFin" id="dob2" />
                                 </div>
-                                <p>How many team members do you need?</p>
+                                <p>Quantos membros são necessários?</p>
                                 <div class="form-check">
                                     <input type="radio" class="form-checkinput" id="radio1" name="numJornalistas"
                                         value="1">1
@@ -150,11 +159,11 @@
                                     <input type="radio" class="form-check-input" id="radio6" name="numJornalistas"
                                         value="6">6
                                     <label class="form-check-label" for="radio6"></label>
-                                    <div class="form-check">
-                                        <input type="radio" class="form-check-input" id="radio7" name="numJornalistas"
-                                            value="7">7
-                                        <label class="form-check-label" for="radio7"></label>
-                                    </div>
+                                <div class="form-check">
+                                     <input type="radio" class="form-check-input" id="radio7" name="numJornalistas"
+                                        value="7">7
+                                    <label class="form-check-label" for="radio7"></label>
+                                </div>
                                     <div>
                                         <label for="complexityLevel" class="form-label">Complexity
                                             Level</label>
@@ -167,14 +176,14 @@
                                             max="10">
                                     </div>
                                     <div>
-                                        <label for="addictional_text">Additional
-                                            information about the job:</label>
+                                        <label for="addictional_text">Informação
+                                            adicional sobre a operação:</label>
                                         <textarea class="form-control" rows="10" id="addictional_text"
                                             name="addictional_text"></textarea>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="submit" id="submit10" value="formHire" class="btn" name="saves"
-                                            btn-primary">Submit</button>
+                                            btn-primary">Submeter</button>
                                     </div>
 
                                 </div>

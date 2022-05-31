@@ -92,6 +92,8 @@ const loadData = (idTable, idform) => {
         `         
         <tr>
         <td>${user[idform].nome}</td>
+        <td>${user[idform].orcamento}</td>
+        <td>${user[idform].localizacao}</td>
         <td>${user[idform].dataIn}</td>
         <td>${user[idform].dataFin}</td>
         <td>${user[idform].numJornalistas}</td>
