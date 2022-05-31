@@ -233,7 +233,18 @@
         <div class="card">
 
           <h5 class="card-header">Operations</h5>
-
+          <div class="tablita">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                </tr>
+              </thead>
+              <tbody id="intern">
+              </tbody>
+            </table>
+          </div>
           <div class="modal-body">
             <table class="table table-striped">
               <tr class="bg-info">
@@ -273,15 +284,15 @@
 
               <div class="dropdown">
                 <a>Selecione um Pedido:</a>
-                <select id="listEvent" name="listEvent" class=" btn btn-primary dropdown-toggle" >
+                <select id="listEvent" name="listEvent" class=" btn btn-primary dropdown-toggle">
                   Events
                 </select>
               </div>
-              <div class="dropdown">
-                <a>Selecione os jornalistas :</a>
-                <select id="listJornalistas" name="listJornalistas" class=" btn btn-primary dropdown-toggle" >
-                  Jornalistas
-                </select>
+              <div>
+                <input hidden id>
+              </div>
+              <div class="form-check" id="chooseJorn">
+
               </div>
               <div class="dropdown">
                 <select id="listIntern" name="listIntern" class=" btn btn-primary dropdown-toggle">
@@ -290,8 +301,7 @@
               </div>
               <div>
                 <label for="material_info">Que material necessita para esta operação?:</label>
-                <textarea class="form-control" rows="10" id="material_info"
-                    name="material_info"></textarea>
+                <textarea class="form-control" rows="10" id="material_info" name="material_info"></textarea>
               </div>
               <div class="footer">
                 <button type="submit" id="submitEvent" value="formEvento" class="btn btn-primary" name="saves"

@@ -194,40 +194,7 @@
                 </div>
             </div>
         </div>
-<!-- (A) DIV CONTAINER -->
-<div id="demoC"></div>
- 
-<!-- (B) JAVASCRIPT -->
-<script>
-// (B1) JSON STRING TO OBJECT
-var data = '{"Fruits":["Durian","Elderberries","Feijoa"],"Vegetables":["Corn","Daikon","Eggplant"]}';
-data = JSON.parse(data);
- 
-// (B2) CREATE LIST
-var list = document.createElement("ul");
-for (let i in data) {
-  // LIST ITEM
-  let item = document.createElement("li");
-  list.appendChild(item);
- 
-  // SUB-SECTION TITLE
-  let head = document.createElement("strong");
-  head.innerHTML = i;
-  item.appendChild(head);
- 
-  // SUB-SECTION ITEMS
-  let sublist = document.createElement("ul");
-  item.appendChild(sublist);
-  for (let j of data[i]) {
-    let subitem = document.createElement("li");
-    subitem.innerHTML = j;
-    sublist.appendChild(subitem);
-  }
-}
- 
-// (B3) APPEND LIST TO CONTAINER
-document.getElementById("demoC").appendChild(list);
-</script>
+
 
         <!-- Secção Estágios, onde iniciamos as classes desta-->
         <div class="main" id="internship">
@@ -289,55 +256,7 @@ document.getElementById("demoC").appendChild(list);
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"> Ver
-        Observações</button>
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Observações</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">Texto do front office</div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </td>
-    <td>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2"> Aceitar</button>
-        <div class="modal" id="Modal2">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Inserir dados</h4>
-                    </div>
-                    <div class="modal-body">
-                        <table class="table table-striped">
-                            <tr class="bg-info">
-                                <th>Nome</th>
-                                <th>Idade</th>
-                                <th>Género</th>
-                            </tr>
-
-                            <tbody id="myTable">
-
-                            </tbody>
-                            <div>
-                                <label for="material">Material Necessário para o evento:</label>
-                                <textarea class="form-control" rows="10" id="material" name="material"></textarea>
-                            </div>
-                            <button type="submit" id="submit" value="formIntern" name="saves"
-                                class="btn btn-primary">Submit</button>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#Modal3">Recusar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
 
         <hr id="linha1" size="6" width="70%">
 
