@@ -52,11 +52,11 @@ var jornalistas = [
     ]   
 
 
-buildTable(jornalistas)
+buildTable(jornalistas);
 
 
 
-	function buildTable(data){
+	 function buildTable(data){
 		var table = document.getElementById('myTable')
 
 		for (var i = 0; i < data.length; i++){
@@ -71,6 +71,20 @@ buildTable(jornalistas)
 
 		}
 	}
+    loadListJorn(jornalistas);
+
+    function loadListJorn  (data) {
+        let dropdown = document.getElementById('listJornalistas');
+        let option;
+        for (var i = 0; i < data.length; i++){
+            option = document.createElement('option');
+            console.log(data[i.nome]);
+            option.text = data[i].nome;
+            option.value = data[i].nome;
+            dropdown.append(option);
+        };
+    
+    }
 
     function addDays(date, days) {
         var result = new Date(date);
