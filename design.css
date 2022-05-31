@@ -328,7 +328,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: auto;
+  padding: 10rem 7.5rem ;
+  
 }
 
 .services__container h1 {
@@ -356,12 +357,32 @@
   -moz-background-clip: text;
 }
 
+.btn-space {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+
+}
+
+.buttons1 {
+  display: flex;
+  	align-items: center;
+  	justify-content: center;
+
+}
+
 .mybutton {
   background: #2453ae !important;
   border-radius: 65px !important;
   text-align: center !important;
-}
 
+
+
+}
+.mybutton a {
+  color:white;
+
+}
 span.newsonmove1 {
   color:white;
   box-sizing: border-box;
@@ -428,7 +449,13 @@ span.newsonmove1 {
   display: flex;
   margin-bottom: 0;
 }
-
+.internship_content {
+  color: white;
+  width: 100%;
+}
+.form-label {
+  color:white;
+}
 #linha{
   color: white;
     margin: 0;
@@ -525,5 +552,85 @@ span.newsonmove1 {
   font-size: 20px;
   font-family: Arial;
   font-weight: 350;
+}
+
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+.fa-brands fa-facebook
+.fa-brands fa-twitter,
+.fa-brands fa-linkedin,
+.fa-brands fa-instagram {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+  color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+  color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+  color: #517fa4;
+}
+
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
 }
 
