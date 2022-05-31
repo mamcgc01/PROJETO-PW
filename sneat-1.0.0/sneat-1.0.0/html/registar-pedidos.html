@@ -127,11 +127,7 @@
                   <div data-i18n="orders">Pedidos </div>
                 </a>
               </li>
-              <li class="menu-item">
-                <a href="estagios.html" class="menu-link">
-                  <div data-i18n="orders">Estágios </div>
-                </a>
-              </li>
+
             </ul>
           </li>
           </li>
@@ -215,7 +211,7 @@
         <!-- / Navbar -->
         <div class="card">
 
-          <h5 class="card-header">Pedidos</h5>
+          <h5 class="card-header">Estagiários</h5>
           <div class="tablita">
             <table class="table">
               <thead>
@@ -228,6 +224,7 @@
               </tbody>
             </table>
           </div>
+          <h5 class="modal-body">Jornalistas </h5>
           <div class="modal-body">
             <table class="table table-striped">
               <tr class="bg-info">
@@ -240,7 +237,7 @@
 
               </tbody>
             </table>
-
+            <h5 class="modal-body">Eventos </h5>
             <div class="table-responsive text-nowrap">
               <table class="table">
                 <thead>
@@ -262,6 +259,7 @@
             </div>
           </div>
 
+          <h5 class="modal-body">Criar Operação:  </h5>
           <form id="formEvento">
             <div class="input-group mb-3">
 
@@ -271,25 +269,32 @@
                   Events
                 </select>
               </div>
+              <p></p>
               <div>
                 <input hidden id>
               </div>
               <div class="form-check" id="chooseJorn">
-
+              <a>Selecione os jornalistas:</a>
+              <p></p>
               </div>
               <div class="dropdown">
+              <a>Selecione um Estagiário: </a>
                 <select id="listIntern" name="listIntern" class=" btn btn-primary dropdown-toggle">
                   Eventos
                 </select>
               </div>
+
               <div>
-                <label for="material_info">Que material necessita para esta operação?:</label>
+                <label for="material_info">Que material necessita para esta operação?</label>
+
                 <textarea class="form-control" rows="10" id="material_info" name="material_info"></textarea>
               </div>
+
               <div class="footer">
-                <button type="submit" id="submitEvent" value="formEvento" class="btn btn-primary" name="saves"
+                <button type="submit" id="submitEvent" value="formEvento" class="btn btn-primary" name="saveEvent"
                   btn-primary">Submeter</button>
               </div>
+              
             </div>
 
           </form>

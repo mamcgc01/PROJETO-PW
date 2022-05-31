@@ -21,8 +21,81 @@ window.onload = function () {
     idTable3 = "events"
 
 }
-let submitButton = document.querySelectorAll("button[name='saves']"); // select submit button
 
+let submitButton = document.querySelectorAll("button[name='saves']"); // select submit button
+let submitEventButton = document.querySelector("button[name='saveEvent']"); // select submit button
+
+if (submitEventButton)
+    submitEventButton.addEventListener("click", function () {
+        formId = this.value;
+        alert(formId);
+
+        const formIdentifier = `${formId}`; // Identifier used to identify the form
+        let form = document.querySelector(`#${formId}`); // select form
+        let formElements = form.elements; // get the elements in the form
+        console.log(formElements)
+        const getEventFormData = () => {
+            let data = { [formIdentifier]: {} };
+            data[formIdentifier]["jornalistas"] = []
+            for (const element of formElements) {
+                if (element.name == "jornalistas") {
+                    if(element.checked) 
+                    {
+                        if(verificarDisponibilidade(data[formIdentifier]["listEvent"], element.value))
+                            data[formIdentifier][element.name].push(element.value);
+                        else
+                        {
+                            alert("O jornalista " + element.value + " encontra-se ocupado nestas datas.")
+                            return null;
+                        }
+                    }
+                }
+                else if (element.name.length > 0) {
+                    console.log(element.name)
+                    data[formIdentifier][element.name] = element.value;
+                }
+            }
+
+            if (data[formIdentifier]["jornalistas"].length > getHire(data[formIdentifier]["listEvent"])["numJornalistas"]){
+                alert("Foi excedido o limite de jornalistas.")
+                return null;
+            }
+            else if (data[formIdentifier]["jornalistas"].length < getHire(data[formIdentifier]["listEvent"])["numJornalistas"]){
+                alert("Não foram selecionados jornalistas suficientes.")
+                return null;
+            }
+            
+            //if (!verificarTipologia(data[formIdentifier]["jornalistas"])){
+            //    alert("Foi excedido o limite de jornalistas por tipologia.")
+            //    return null;
+            //}
+            return data;
+        };
+
+        data = getEventFormData();
+        console.log("data:", data);
+        if (data) SaveDataToLocalStorage(data, formIdentifier);
+
+        /**
+         * This function gets the values in the form
+         * and returns them as an object with the
+         * [formIdentifier] as the object key
+         * @returns {Object}
+         */
+
+
+        function SaveDataToLocalStorage(data, formIdentifier) {
+            let a = [];
+            // Parse the serialized data back into an aray of objects
+            a = JSON.parse(localStorage.getItem(formIdentifier)) || [];
+            console.log(a)
+            // Push the new data (whether it be an object or anything else) onto the array
+            a.push(data);
+            // Alert the array value
+            // Re-serialize the array back into a string and store it in localStorage
+            localStorage.setItem(formIdentifier, JSON.stringify(a));
+        }
+    })
 
 submitButton.forEach(function (elem) {
     elem.addEventListener("click", function () {
@@ -131,6 +204,7 @@ const loadDataList1 = (idList, idForm) => {
         option = document.createElement('option');
         option.text = user[idForm].name;
         option.value = user[idForm].name;
+        console.log(user, idForm, user[idForm].name)
         dropdown.add(option);
     });
 
@@ -142,6 +216,7 @@ const loadDataList1 = (idList, idForm) => {
 
 const loadData2 = (idTable2, idform2) => {
     let data = JSON.parse(localStorage.getItem(idform2))
+    console.log(localStorage.getItem(idform2))
     let tableData2 = data.map(user => (
         `
         <tr>
