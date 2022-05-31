@@ -527,3 +527,12 @@ span.newsonmove1 {
   font-weight: 350;
 }
 
+#navtext{
+  font-size: 15px;
+}
+
+#corfooter{
+  background-color: #9ac9f5;
+  overflow: hidden
+}
+
