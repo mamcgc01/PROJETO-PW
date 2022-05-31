@@ -183,7 +183,7 @@
                           </div>
                         </div>
                         <div class="flex-grow-1">
-                          <span class="fw-semibold d-block">John Doe</span>
+                          <span class="fw-semibold d-block">Miguel Caldas</span>
                           <small class="text-muted">Admin</small>
                         </div>
                       </div>
@@ -198,24 +198,7 @@
                       <span class="align-middle">My Profile</span>
                     </a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="bx bx-cog me-2"></i>
-                      <span class="align-middle">Settings</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <span class="d-flex align-items-center align-middle">
-                        <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                        <span class="flex-grow-1 align-middle">Billing</span>
-                        <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <div class="dropdown-divider"></div>
-                  </li>
+                  
                   <li>
                     <a class="dropdown-item" href="auth-login-basic.html">
                       <i class="bx bx-power-off me-2"></i>
@@ -232,201 +215,96 @@
         <!-- / Navbar -->
         <div class="card">
 
-          <h5 class="card-header">Operations</h5>
-          <div class="table-responsive text-nowrap">
+          <h5 class="card-header">Pedidos</h5>
+          <div class="tablita">
             <table class="table">
               <thead>
                 <tr>
-                  <th>Evento</th>
-                  <th>Data-Início</th>
-                  <th>Data-Fim</th>
-                  <th>Jornalistas Necessários</th>
-                  <th>Complexidade</th>
-                  <th>Risco</th>
-                  <th>Observações</th>
-                  <th>Aceitar/Recusar</th>
+                  <th>Nome</th>
+                  <th>E-mail</th>
                 </tr>
               </thead>
-              <tbody id="tbbody">
-                
-              <td>
-
-
-                    <!-- Button to Open the Modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"> Ver
-                      Observações</button>
-                    <!-- The Modal -->
-                    <div class="modal" id="myModal">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <!-- Modal Header -->
-                            <h4 class="modal-title">Observações</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                          </div> <!-- Modal body -->
-                          <div class="modal-body">Texto do front office</div> <!-- Modal footer -->
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  </td>
-                  <td>
-
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2">
-                      Aceitar</button>
-                    <div class="modal" id="Modal2">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <!-- Modal Header -->
-                            <h4 class="modal-title">Inserir dados</h4>
-                          </div>
-                          <!-- Modal body -->
-                          <div class="modal-body">
-                            <table class="table table-striped">
-                              <tr class="bg-info">
-                                <th>Nome</th>
-                                <th>Idade</th>
-                                <th>Género</th>
-                              </tr>
-
-                              <tbody id="myTable">
-
-                              </tbody>
-                            </table>
-
-                            <script>
-                              var jornalistas = [
-                                {
-                                  "nome": "João António",
-                                  "password": "1234",
-                                  "genero": "masculino",
-                                  "idade": 24,
-                                  "disponibilidade": true
-                                },
-                                {
-                                  "nome": "Rui Silva",
-                                  "password": "1234",
-                                  "genero": "masculino",
-                                  "idade": 34,
-                                  "disponibilidade": true
-                                },
-                                {
-                                  "nome": "Rita Oliveira",
-                                  "password": "1234",
-                                  "genero": "feminino",
-                                  "idade": 47,
-                                  "disponibilidade": true
-                                },
-                                {
-                                  "nome": "Sofia Costa",
-                                  "password": "1234",
-                                  "genero": "feminino",
-                                  "idade": 21,
-                                  "disponibilidade": true
-                                },
-                                {
-                                  "nome": "José Pereira",
-                                  "password": "1234",
-                                  "genero": "masculino",
-                                  "idade": 32,
-                                  "disponibilidade": true
-                                },
-                                {
-                                  "nome": "Miguel Estevão",
-                                  "password": "1234",
-                                  "genero": "masculino",
-                                  "idade": 24,
-                                  "disponibilidade": true
-                                },
-                                {
-                                  "nome": "Ricardo Monteiro",
-                                  "password": "1234",
-                                  "genero": "masculino",
-                                  "idade": 45,
-                                  "disponibilidade": true
-                                }
-
-                              ]
-
-                              buildTable(jornalistas)
-
-
-
-                              function buildTable(data) {
-                                var table = document.getElementById('myTable')
-
-                                for (var i = 0; i < data.length; i++) {
-                                  if (data[i].disponibilidade === true) {
-                                    var row = `<tr>
-                                        <td>${data[i].nome}<div class="checkbox"> <label> <input type="checkbox" value="" id="jornalistaSelected"></label> </div></td>
-                                        <td>${data[i].idade}</td>
-                                        <td>${data[i].genero}</td>
-                                      </tr>`
-                                    table.innerHTML += row
-                                  }
-                                }
-                              }
-
-                            </script>
-
-
-                          </div>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div> <!-- Modal body -->
-                      </div>
-                    </div>
+              <tbody id="intern">
+              </tbody>
+            </table>
           </div>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal3">
-            Recusar</button>
+          <div class="modal-body">
+            <table class="table table-striped">
+              <tr class="bg-info">
+                <th>Nome</th>
+                <th>Género</th>
+                <th>Idade</th>
+              </tr>
 
-          </td>
-          </tr>
-          
-          </tbody>
-          </table>
+              <tbody id="myTable">
+
+              </tbody>
+            </table>
+
+            <div class="table-responsive text-nowrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Evento</th>
+                    <th>Orçamento</th>
+                    <th>Localização</th>
+                    <th>Data-Início</th>
+                    <th>Data-Fim</th>
+                    <th>Jornalistas Necessários</th>
+                    <th>Complexidade</th>
+                    <th>Risco</th>
+                    <th>Observações</th>
+                  </tr>
+                </thead>
+                <tbody id="hire">
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <form id="formEvento">
+            <div class="input-group mb-3">
+
+              <div class="dropdown">
+                <a>Selecione um Pedido:</a>
+                <select id="listEvent" name="listEvent" class=" btn btn-primary dropdown-toggle">
+                  Events
+                </select>
+              </div>
+              <div>
+                <input hidden id>
+              </div>
+              <div class="form-check" id="chooseJorn">
+
+              </div>
+              <div class="dropdown">
+                <select id="listIntern" name="listIntern" class=" btn btn-primary dropdown-toggle">
+                  Eventos
+                </select>
+              </div>
+              <div>
+                <label for="material_info">Que material necessita para esta operação?:</label>
+                <textarea class="form-control" rows="10" id="material_info" name="material_info"></textarea>
+              </div>
+              <div class="footer">
+                <button type="submit" id="submitEvent" value="formEvento" class="btn btn-primary" name="saves"
+                  btn-primary">Submeter</button>
+              </div>
+            </div>
+
+          </form>
+
+
+
+          <div class="content-backdrop fade"></div>
         </div>
+        <!-- Content wrapper -->
       </div>
-      <!-- Footer -->
-      <footer class="content-footer footer bg-footer-theme">
-        <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-          <div class="mb-2 mb-md-0">
-            ©
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
-          </div>
-          <div>
-            <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-            <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-
-            <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank"
-              class="footer-link me-4">Documentation</a>
-
-            <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank"
-              class="footer-link me-4">Support</a>
-          </div>
-        </div>
-        <!-- (A) WE WILL GENERATE THE TABLE HERE -->
-        <div id="demoA"></div>
-
-
-      </footer>
-      <!-- / Footer -->
-
-      <div class="content-backdrop fade"></div>
+      <!-- / Layout page -->
     </div>
-    <!-- Content wrapper -->
-  </div>
-  <!-- / Layout page -->
-  </div>
 
-  <!-- Overlay -->
-  <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
   </div>
   <!-- / Layout wrapper -->
 
@@ -450,9 +328,8 @@
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script src="jornalistas.js"></script>
-  <script src="gestores.json"></script>
-  <script src="work.js"></script>
+  <script src="../jornalistas.js"></script>
+  <script src="../../../work.js"></script>
 
 </body>
 

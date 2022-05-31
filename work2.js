@@ -7,19 +7,9 @@ const alertBox = document.querySelector(".alert"); // select alert display div
 const url = location.href; //  href for the page
 
 window.onload = function () {
-
-    idTable = "hire"
-    idForm = "formHire"
-    loadData(idTable, idForm);
-    idTable2 = "intern"
-    idForm2 = "formIntern"
-    loadData2(idTable2, idForm2);
-    idList = "listEvent"
-    loadDataList(idList, idForm)
-    idList2 = "listIntern"
-    loadDataList1(idList2, idForm2)
-    idTable3 = "events"
-
+    idTable ="events"
+    idForm ="formEvento"
+    loadData(idTable,idForm)
 }
 let submitButton = document.querySelectorAll("button[name='saves']"); // select submit button
 
@@ -84,22 +74,16 @@ const displayAlert = message => {
     }, 1000);
 };
 
-//localStorage.getItem(dataObj);
 const loadData = (idTable, idform) => {
     let data = JSON.parse(localStorage.getItem(idform))
     let tableData = data.map(user => (
 
         `         
         <tr>
-        <td>${user[idform].nome}</td>
-        <td>${user[idform].orcamento}</td>
-        <td>${user[idform].localizacao}</td>
-        <td>${user[idform].dataIn}</td>
-        <td>${user[idform].dataFin}</td>
-        <td>${user[idform].numJornalistas}</td>
-        <td>${user[idform].riskLevel}</td>
-        <td>${user[idform].complexityLevel}</td>
-        <td>${user[idform].addictional_text}</td>
+        <td>${user[idform].listEvent}</td>
+        <td>${user[idform].listJornalistas}</td>
+        <td>${user[idform].listIntern}</td>
+        <td>${user[idform].material_info}</td>
         </tr>
 
     `
@@ -110,51 +94,8 @@ const loadData = (idTable, idform) => {
 
 }
 
-const loadDataList = (idList, idForm) => {
-    let dropdown = document.getElementById(idList);
-    let data = JSON.parse(localStorage.getItem(idForm));
-    let option;
-    data.forEach(user => {
-        option = document.createElement('option');
-        option.text = user[idForm].nome;
-        option.value = user[idForm].nome;
-        dropdown.add(option);
-    });
-
-}
-
-const loadDataList1 = (idList, idForm) => {
-    let dropdown = document.getElementById(idList);
-    let data = JSON.parse(localStorage.getItem(idForm));
-    let option;
-    data.forEach(user => {
-        option = document.createElement('option');
-        option.text = user[idForm].name;
-        option.value = user[idForm].name;
-        dropdown.add(option);
-    });
-
-}
 
 
-
-
-
-const loadData2 = (idTable2, idform2) => {
-    let data = JSON.parse(localStorage.getItem(idform2))
-    let tableData2 = data.map(user => (
-        `
-        <tr>
-        <td>${user[idform2].name}</td>
-        <td>${user[idform2].email}</td>
-        </tr>
-    `
-    )).join('');
-
-    let tbody = document.querySelector(`#${idTable2}`);
-    tbody.innerHTML = tableData2;
-
-}
 
 function SaveDataToLocalStorage(data) {
     let a = [];
@@ -168,17 +109,7 @@ function SaveDataToLocalStorage(data) {
     localStorage.setItem("form", JSON.stringify(a));
 }
 
-function SaveDataToLocalStorageIntern(data) {
-    let a = [];
-    // Parse the serialized data back into an aray of objects
-    a = JSON.parse(localStorage.getItem("formIntern")) || [];
-    console.log(a)
-    // Push the new data (whether it be an object or anything else) onto the array
-    a.push(data);
-    // Alert the array value
-    // Re-serialize the array back into a string and store it in localStorage
-    localStorage.setItem("formIntern", JSON.stringify(a));
-}
+
 
 /**
  * This function populates the form

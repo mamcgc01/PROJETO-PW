@@ -195,7 +195,7 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
+                            <span class="fw-semibold d-block">Miguel Caldas</span>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
@@ -210,24 +210,7 @@
                         <span class="align-middle">My Profile</span>
                       </a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-cog me-2"></i>
-                        <span class="align-middle">Settings</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <span class="d-flex align-items-center align-middle">
-                          <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                          <span class="flex-grow-1 align-middle">Billing</span>
-                          <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
+                    
                     <li>
                       <a class="dropdown-item" href="auth-login-basic.html">
                         <i class="bx bx-power-off me-2"></i>
@@ -256,19 +239,10 @@
                     <li class="nav-item">
                       <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Account</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages-account-settings-notifications.html"
-                        ><i class="bx bx-bell me-1"></i> Notifications</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="pages-account-settings-connections.html"
-                        ><i class="bx bx-link-alt me-1"></i> Connections</a
-                      >
-                    </li>
+                   
                   </ul>
                   <div class="card mb-4">
-                    <h5 class="card-header">Profile Details</h5>
+                    <h5 class="card-header">Perfil</h5>
                     <!-- Account -->
                     <div class="card-body">
                       <div class="d-flex align-items-start align-items-sm-center gap-4">
@@ -282,7 +256,7 @@
                         />
                         <div class="button-wrapper">
                           <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
-                            <span class="d-none d-sm-block">Upload new photo</span>
+                            <span class="d-none d-sm-block">Upload nova foto</span>
                             <i class="bx bx-upload d-block d-sm-none"></i>
                             <input
                               type="file"
@@ -306,7 +280,7 @@
                       <form id="formAccountSettings" method="POST" onsubmit="return false">
                         <div class="row">
                           <div class="mb-3 col-md-6">
-                            <label for="firstName" class="form-label">First Name</label>
+                            <label for="firstName" class="form-label"> Nome</label>
                             <input
                               class="form-control"
                               type="text"
@@ -317,7 +291,7 @@
                             />
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="lastName" class="form-label">Last Name</label>
+                            <label for="lastName" class="form-label">Último Nome</label>
                             <input class="form-control" type="text" name="lastName" id="lastName" value="Doe" />
                           </div>
                           <div class="mb-3 col-md-6">
@@ -332,7 +306,7 @@
                             />
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                            <label class="form-label" for="phoneNumber">Número de Telemóvel</label>
                             <div class="input-group input-group-merge">
                               <span class="input-group-text"></span>
                               <input
@@ -345,42 +319,33 @@
                             </div>
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
+                            <label for="address" class="form-label">Morada</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="morada" />
                           </div>
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label class="form-label" for="country">Country</label>
+                            <label class="form-label" for="country">País</label>
                             <select id="country" class="select2 form-select">
                               <option value="">Select</option>
-                              <option value="Australia">Australia</option>
-                              <option value="Bangladesh">Bangladesh</option>
-                              <option value="Belarus">Belarus</option>
-                              <option value="Brazil">Brazil</option>
-                              <option value="Canada">Canada</option>
+                              <option value="Austrália">Australia</option>
+                              <option value="Brasil">Brasil</option>
+                              <option value="Canada">Canadá</option>
                               <option value="China">China</option>
-                              <option value="France">France</option>
-                              <option value="Germany">Germany</option>
-                              <option value="India">India</option>
-                              <option value="Indonesia">Indonesia</option>
+                              <option value="Franca">França</option>
+                              <option value="Alemanha">Alemanha</option>
+                              <option value="India">índia</option>
                               <option value="Israel">Israel</option>
-                              <option value="Italy">Italy</option>
-                              <option value="Japan">Japan</option>
-                              <option value="Korea">Korea, Republic of</option>
-                              <option value="Mexico">Mexico</option>
-                              <option value="Philippines">Philippines</option>
-                              <option value="Russia">Russian Federation</option>
-                              <option value="South Africa">South Africa</option>
-                              <option value="Thailand">Thailand</option>
-                              <option value="Turkey">Turkey</option>
-                              <option value="Ukraine">Ukraine</option>
-                              <option value="United Arab Emirates">United Arab Emirates</option>
-                              <option value="United Kingdom">United Kingdom</option>
-                              <option value="United States">United States</option>
+                              <option value="Italia">Itália</option>
+                              <option value="Japao">Japão</option>
+                              <option value="Mexico">México</option>
+                              <option value="Russia">Rússia</option>
+                              <option value="Africa do Sul">África di Sul</option>
+                              <option value="Reino Unido">Reino Unido</option>
+                              <option value="Estados Unidos">Estados Unidos</option>
                             </select>
                           </div>
                           <div class="mb-3 col-md-6">
-                            <label for="language" class="form-label">Language</label>
+                            <label for="language" class="form-label">Idioma</label>
                             <select id="language" class="select2 form-select">
                               <option value="">Select Language</option>
                               <option value="en">English</option>
@@ -391,15 +356,15 @@
                           </div>  
                         </div>
                         <div class="mt-2">
-                          <button type="submit" class="btn btn-primary me-2">Save changes</button>
-                          <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+                          <button type="submit" class="btn btn-primary me-2">Guardar Alterações</button>
+                          <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
                         </div>
                       </form>
                     </div>
                     <!-- /Account -->
                   </div>
                   <div class="card">
-                    <h5 class="card-header">Delete Account</h5>
+                    <h5 class="card-header">Apagar Conta</h5>
                     <div class="card-body">
                       <div class="mb-3 col-12 mb-0">
                         <div class="alert alert-warning">
