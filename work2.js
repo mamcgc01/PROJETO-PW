@@ -81,7 +81,7 @@ const loadData = (idTable, idform) => {
         `         
         <tr>
         <td>${user[idform].listEvent}</td>
-        <td>${user[idform].listJornalistas}</td>
+        <td>${user[idform].jornalistas}</td>
         <td>${user[idform].listIntern}</td>
         <td>${user[idform].material_info}</td>
         </tr>
