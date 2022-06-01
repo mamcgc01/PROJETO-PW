@@ -161,8 +161,7 @@
     #86b9e9 84.9%,
     #9ac9f5 99.99%
   );
-  padding: 300px 0;
-
+  padding: 200px 0;
 }
 
 .initial__container {
@@ -201,8 +200,7 @@
 
 .main {
   background-color: #9ac9f5;
-  padding: 12.5rem 7.5rem;
-  margin: 0 auto;
+  padding: 10rem 0;
 }
 
 .main__container {
@@ -216,28 +214,8 @@
   width: 100%;
   max-width: 1280px;
   padding: 0 50px;
-  
-
-  
 }
 
-.internship_container h1 {
-  font-size: 3.5rem;
-  background-color: #9ac9f5;
-  background-image: linear-gradient(
-    to top,
-    #bec9d3 0%,
-    #fefefe 18.9%,
-    #c9d7e4 99.99%
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
 .main__content {
   color: white;
   width: 100%;
@@ -357,8 +335,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 15rem 7.5rem ;
-  
+  padding: auto;
 }
 
 .services__container h1 {
@@ -379,36 +356,10 @@
   margin-bottom: 20px;
 }
 
-.btn-space {
-  width: 300px;
-  height: auto;
-  display: inline-block;
-
-}
-
-.buttons1 {
-  margin: 50px auto;
-  display: flex;
-  	align-items: center;
-  	justify-content: center;
-
-}
-
 .mybutton {
   background: #2453ae !important;
   border-radius: 65px !important;
   text-align: center !important;
-  transform: scale(1.5);
-}
-
-
-.mybutton a {
-  color:white;
-
-}
-.mybutton a:hover {
-   text-decoration: none;
-   color:white;
 }
 
 span.newsonmove1 {
@@ -477,13 +428,7 @@ span.newsonmove1 {
   display: flex;
   margin-bottom: 0;
 }
-.internship_content {
-  color: white;
-  width: 100%;
-}
-.form-label {
-  color:white;
-}
+
 #linha{
   color: white;
     margin: 0;
@@ -670,8 +615,3 @@ span.newsonmove1 {
   text-align: center;
   margin-top: 25px;
 }
-
-
-
-
-
