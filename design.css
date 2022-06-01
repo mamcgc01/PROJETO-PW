@@ -201,7 +201,8 @@
 
 .main {
   background-color: #9ac9f5;
-  padding: 12.5rem 0;
+  padding: 12.5rem 7.5rem;
+  margin: 0 auto;
 }
 
 .main__container {
@@ -589,4 +590,6 @@ span.newsonmove1 {
   background-color: #9ac9f5;
   overflow: hidden
 }
+
+
 
