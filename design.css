@@ -574,3 +574,28 @@ span.newsonmove1 {
   text-align: center;
   margin-top: 25px;
 }
+
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.container_map {
+  background: #9ac9f5;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: auto;
+}
+
+.container_map h1 {
+  font-size: 2.9rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 750;
+  color:#D5F2FE;
+}
