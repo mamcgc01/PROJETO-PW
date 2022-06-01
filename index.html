@@ -99,6 +99,8 @@
         <hr id="linha" size="10" width="65%">
     </div>
 
+
+
     <!-- Secção Sobre Nós, onde iniciamos as classes desta-->
     <div class="main" id="about">
         <div class="main__container">
@@ -133,10 +135,11 @@
                     Contratar Equipa
                   </button>
                   <button type="button" id="btnestagios" class="btn btn-primary mybutton btn-lg me-md-4"
-                    data-bs-toggle="modal" data-bs-target="#myModal">
+                    data-bs-toggle="modal" data-bs-target="#myModal1">
                     Estágios
                   </button>
                 </center>
+                <!--botão1-->
                 <div class="modal" id="myModal">
                     <div class="modal-dialog">
                           <div class="modal-content">
@@ -214,6 +217,40 @@
                         </div>
                     </div>
                 </div>
+                <!--botão1-->
+                <!--botão2-->
+                <div class="modal" id="myModal1">
+                  <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Faça aqui o seu estágio!</h4>
+                            </div> <!-- Modal body -->
+                              <div class="modal-body">
+                                <form id="formHire">
+                                  <div class="mb-3 mt-3">
+                                      <label for="nome" class="form-label">Nome:</label>
+                                      <input type="nome" class="form-control" id="nameform"
+                                          placeholder="ex: João Faria Alberto" name="nome">
+                                  </div>
+                                  <div class="mb-3 mt-3">
+                                    <label for="nome" class="form-label">E-mail:</label>
+                                    <input type="nome" class="form-control" id="nameform"
+                                        placeholder="ex: joãoalberto@gmail.com" name="nome">
+                                </div>
+                                   <div>
+                                      <label for="addictional_text">Informação adicional:</label>
+                                      <textarea class="form-control" rows="10" id="addictional_text"
+                                          name="addictional_text"></textarea>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="submit" id="submit" value="formHire" name="saves" class="btn btn-primary">Submeter</button>
+                                  </div>
+                                </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <!--botão2-->
             </div>
         </div>
       </div>
@@ -224,7 +261,7 @@
                     <div class="internship_content">
                         <h1> Estágios </h1>
                         <h2>
-                            Faça aqui o seu estágio!</h2>
+                            Exemplos de alguns estágios:</h2>
                     </div>
                     <!-- Tabela com informações de estágios disponíveis-->
                     <table id="tabelaestagios" class="table">
@@ -232,7 +269,6 @@
                         <tr>
                           <th scope="col">
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </div>
                           </th>
                           
@@ -282,6 +318,8 @@
                       </tbody>
                     </table>
                         <!--tabela fecha aqui-->
+                    
+                        <!--
                     <form id="formIntern">
                         <div class="mb-3 mt-3">
                             <label id="lblnome" for="name">Nome:</label>
@@ -294,7 +332,7 @@
                                 placeholder="ex: joaocarlos@gmail.com"
                                 name="email">
                         </div>
-                        <!-- data e carregar curriculo-->
+                        
                         <div>
                             <label id="lblinfo" for="addictional_text">Informação adicional:</label>
                             <textarea class="form-control" rows="10"
@@ -306,6 +344,7 @@
                         <div id="btnsubmeter" class="d-grid mx-auto col-6 gap-2">
                           <button type="submit" id="submit" value="formIntern" name="saves" class="btn btn-primary mybutton btn-lg">Submeter</button>
                         </div>
+                      -->
                 </div>
             </div> 
 
